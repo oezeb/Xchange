@@ -1,0 +1,22 @@
+plugins {
+	id 'java'
+}
+
+group = 'com.oezeb'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '16'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	// https://mvnrepository.com/artifact/org.json/json
+	implementation 'org.json:json:20210307'
+	// https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+	implementation 'org.xerial:sqlite-jdbc:3.36.0.1'
+}
+
+test {
+	useJUnitPlatform()
+}
